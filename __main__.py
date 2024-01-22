@@ -27,3 +27,4 @@ elif selection == "2" or "write":
     N2 = input("Define Class Variable: ")
     N3 = input("Define Change: ")
     read.write(N1, N2, N3)
+    print
