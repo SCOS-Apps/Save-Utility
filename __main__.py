@@ -5,7 +5,6 @@ import sys
 global N1
 global N2
 global N3
-    
 
 print("SCOS Config & Save Editor and reader.")
 
