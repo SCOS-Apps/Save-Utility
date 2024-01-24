@@ -2,14 +2,6 @@ import configparser
 import __read__ as read
 import sys
 
-config = configparser.ConfigParser()
-
-try:
-    sys.argv[2]
-except IndexError:
-    config.read(input("File Path: "))
-else:
-    print("MEM Set")
 
 print("SCOS Config & Save Editor and reader.")
 

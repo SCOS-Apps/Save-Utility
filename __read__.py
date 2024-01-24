@@ -1,6 +1,8 @@
 import sys
 import configparser
 
+global config
+
 config = configparser.ConfigParser()
 
 try:
