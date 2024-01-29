@@ -26,4 +26,10 @@ elif selection == "2" or "write":
     N1 = input("Define Class: ")
     N2 = input("Define Class Variable: ")
     N3 = input("Define Change: ")
+    if (N1 or N2 == None):
+        while N1 or N2 == None:
+            print("Warning: Variables Are None.")
+            N1 = input("Define Class: ")
+            N2 = input("Define Class Variable: ")
+            N3 = input("Define Change: ")
     read.write(N1, N2, N3)
