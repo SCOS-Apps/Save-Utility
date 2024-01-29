@@ -16,6 +16,11 @@ selection = input("Selection: ")
 if selection == "1" or "read":
     N1 = input("Define Class: ")
     N2 = input("Define Class Variable: ")
+    if (N1 or N2 == None):
+        while N1 or N2 == None:
+            print("Warning: Variables Are None.")
+            N1 = input("Define Class: ")
+            N2 = input("Define Class Variable: ")
     print(read.read(N1, N2))
 elif selection == "2" or "write":
     N1 = input("Define Class: ")
