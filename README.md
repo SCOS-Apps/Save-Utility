@@ -10,7 +10,7 @@ Using this is easy and fast, that even somebody who doesn't know Python really w
 
 ### Using SSave
 
-First thing firsts, use ```pip install ssave``` to install the module, then import it using 
+First thing firsts, use ```pip install ssave``` to install the module, then import it using:
 ```py
 py import ssave
-```.
+```
