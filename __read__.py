@@ -19,7 +19,7 @@ def write(direct, variable, change):
     config[direct][variable] = change
 def open(file):
     try:
-        file.read()
+        print(file)
     except:
         print("File not found or not specified.")
     else:
