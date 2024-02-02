@@ -6,4 +6,4 @@ This utility is used for enabling access to `.ini` files to get a save like expe
 
 Using this is easy and fast, that even somebody who doesn't know Python really well can use this.
 
-For a more up-to-date version, use [this.](SCOS-Apps/Save-Utility)
+For a more up-to-date version, use [this.](https://github.com/SCOS-Apps/Save-Utility)
