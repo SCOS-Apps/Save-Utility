@@ -1,0 +1,8 @@
+[project]
+name="ssave"
+version="v1.0"
+dependencies = [
+    "configpaser",
+    "sys"
+]
+requires-python = ">= 3.8"
