@@ -10,7 +10,7 @@ print("SCOS Config & Save Editor and reader.")
 
 print("NOTE: Do NOT close the program while in write function.")
 
-print("Functions:\n1. Read\n2. Write\n3. Exit")
+print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit")
 
 selection = input("Selection: ")
 if (selection == "1"):
@@ -33,3 +33,7 @@ elif (selection == "2"):
             N2 = input("Define Class Variable: ")
             N3 = input("Define Change: ")
     read.write(N1, N2, N3)
+elif (selection == "3"):
+    read.open(input("File path: "))
+elif (selection == "4"):
+    exit()
