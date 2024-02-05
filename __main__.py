@@ -1,48 +1,31 @@
-import configparser
-import __read__ as read
 import sys
+import configparser
 
-global N1
-global N2
-global N3
+global config
 
-print("SCOS Config & Save Editor and reader.")
+config = configparser.ConfigParser()
 
-print("NOTE: Do NOT close the program while in write function.")
+try:
+    sys.argv[2]
+except IndexError:
+    print("File has not been set. Proceed with caution.")
+else:
+    config.read(sys.argv[2])
+    print("MEM Set")
 
-print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
-
-selection = None
-
-while (selection != "4"):
-    selection = input("Selection: ")
-    if (selection == "1"):
-        N1 = input("Define Class: ")
-        N2 = input("Define Class Variable: ")
-        if (N1 == "") or (N2 == ""):
-            while (N1 == "") or (N2 == ""):
-                print("Warning: Variables Are None.")
-                N1 = input("Define Class: ")
-                N2 = input("Define Class Variable: ")
-        print(read.read(N1, N2))
-    elif (selection == "2"):
-        N1 = input("Define Class: ")
-        N2 = input("Define Class Variable: ")
-        N3 = input("Define Change: ")
-        if (N1 == "") or (N2 == "") or (N3 == ""):
-            while (N1 == "") or (N2 == "") or (N3 == ""):
-                print("Warning: Variables Are None.")
-                N1 = input("Define Class: ")
-                N2 = input("Define Class Variable: ")
-                N3 = input("Define Change: ")
-        read.write(N1, N2, N3)
-    elif (selection == "3"):
-        read.open(input("File path: "))
-    elif (selection == "4"):
-        exit()
-    elif (selection == "5"):
-        print("SCOS Config & Save Editor and reader.")
-
-        print("NOTE: Do NOT close the program while in write function.")
-        
-        print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
+def read(direct, variable):
+    print(config[direct][variable])
+def write(direct, variable, change):
+    config[direct][variable] = change
+def open(file):
+    try:
+        print(file)
+    except:
+        print("File not found or not specified.")
+    else:
+        try:
+            config.read(file)
+        except:
+            print("File does not exist or something else happend.")
+        else:
+            config.read(file)
