@@ -1,6 +1,6 @@
 import sys
 import configparser
-import os
+import subprocess
 
 global config
 
@@ -32,11 +32,9 @@ def open(file):
             config.read(file)
 
 try:
-    sys.argv[3]
+    sys.argv[2]
 except IndexError:
-    fileExecution = input("File to execute: ")
+    subprocess.run("py " + input("File to execute: "))
 else:
-    fileExecution = sys.argv[3]
+    subprocess.run("py " + sys.argv[2])
     print("MEM Set")
-finally:
-    os.system(fileExecution)
