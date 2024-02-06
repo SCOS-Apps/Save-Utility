@@ -1,5 +1,5 @@
-import configparser
 import __main__ as read
+import configparser
 import sys
 
 global N1

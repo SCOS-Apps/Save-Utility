@@ -1,5 +1,6 @@
 import sys
 import configparser
+import os
 
 global config
 
@@ -29,3 +30,13 @@ def open(file):
             print("File does not exist or something else happend.")
         else:
             config.read(file)
+
+try:
+    sys.argv[3]
+except IndexError:
+    fileExecution = input("File to execute: ")
+else:
+    fileExecution = sys.argv[3]
+    print("MEM Set")
+finally:
+    os.system(fileExecution)
