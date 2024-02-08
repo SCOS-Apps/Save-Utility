@@ -14,6 +14,7 @@ else:
     config.read(sys.argv[2])
     print("MEM Set")
 
+
 def read(direct, variable):
     print(config[direct][variable])
 def write(direct, variable, change):
