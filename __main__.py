@@ -33,9 +33,9 @@ def open(file):
             config.read(file)
 
 try:
-    sys.argv[2]
+    sys.argv[1]
 except IndexError:
     subprocess.run("py " + input("File to execute: "))
 else:
-    subprocess.run("py " + sys.argv[2])
+    subprocess.run("py " + sys.argv[1])
     print("MEM Set")
