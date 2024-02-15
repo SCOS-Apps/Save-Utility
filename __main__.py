@@ -14,15 +14,11 @@ else:
     config.read(sys.argv[2])
     print("MEM Set")
 
-global read
-global write
-global open
-
 def read(direct, variable):
     print(config[direct][variable])
 def write(direct, variable, change):
     config[direct][variable] = change
-def open(file):
+def sopen(file):
     try:
         print(file)
     except:
@@ -38,7 +34,8 @@ def open(file):
 try:
     sys.argv[1]
 except IndexError:
-    subprocess.run("py " + input("File to execute: "))
+    file = open(input("File to execute: ")).read()
+    exec(file)
 else:
-    subprocess.run("py __main__.py " + sys.argv[1])
-    print("MEM Set")
+    file = open(sys.argv[1]).read()
+    exec(file)

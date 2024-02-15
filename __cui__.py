@@ -1,4 +1,3 @@
-import __main__
 import configparser
 import sys
 
@@ -37,7 +36,7 @@ while (True):
                 N3 = input("Define Change: ")
         write(N1, N2, N3)
     elif (selection == "3"):
-        open(input("File path: "))
+        sopen(input("File path: "))
     elif (selection == "4"):
         exit()
     elif (selection == "5"):
