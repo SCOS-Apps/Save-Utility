@@ -14,6 +14,9 @@ else:
     config.read(sys.argv[2])
     print("MEM Set")
 
+global read
+global write
+global open
 
 def read(direct, variable):
     print(config[direct][variable])
