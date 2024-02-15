@@ -40,5 +40,5 @@ try:
 except IndexError:
     subprocess.run("py " + input("File to execute: "))
 else:
-    subprocess.run("py " + sys.argv[1])
+    subprocess.run("py __main__.py " + sys.argv[1])
     print("MEM Set")

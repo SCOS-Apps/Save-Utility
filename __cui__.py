@@ -14,7 +14,7 @@ print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done
 
 selection = None
 
-while (selection != "4"):
+while (True):
     selection = input("Selection: ")
     if (selection == "1"):
         N1 = input("Define Class: ")
@@ -24,7 +24,7 @@ while (selection != "4"):
                 print("Warning: Variables Are None.")
                 N1 = input("Define Class: ")
                 N2 = input("Define Class Variable: ")
-        print(__main__.open.read(N1, N2))
+        print(read(N1, N2))
     elif (selection == "2"):
         N1 = input("Define Class: ")
         N2 = input("Define Class Variable: ")
@@ -35,9 +35,9 @@ while (selection != "4"):
                 N1 = input("Define Class: ")
                 N2 = input("Define Class Variable: ")
                 N3 = input("Define Change: ")
-        __main__.open.write(N1, N2, N3)
+        write(N1, N2, N3)
     elif (selection == "3"):
-        __main__.open.open(input("File path: "))
+        open(input("File path: "))
     elif (selection == "4"):
         exit()
     elif (selection == "5"):
