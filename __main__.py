@@ -1,6 +1,5 @@
 import sys
 import configparser
-import subprocess
 
 global config
 
@@ -14,10 +13,15 @@ else:
     config.read(sys.argv[2])
     print("MEM Set")
 
+
 def read(direct, variable):
     print(config[direct][variable])
+
+
 def write(direct, variable, change):
     config[direct][variable] = change
+
+
 def sopen(file):
     try:
         print(file)
@@ -27,9 +31,10 @@ def sopen(file):
         try:
             config.read(file)
         except:
-            print("File does not exist or something else happend.")
+            print("File does not exist or something else happened.")
         else:
             config.read(file)
+
 
 try:
     sys.argv[1]
