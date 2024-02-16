@@ -8,10 +8,8 @@ config = configparser.ConfigParser()
 def read(direct, variable):
     print(config[direct][variable])
 
-
 def write(direct, variable, change):
     config[direct][variable] = change
-
 
 def sopen(file):
     try:
@@ -25,7 +23,6 @@ def sopen(file):
             print("File does not exist or something else happened.")
         else:
             config.read(file)
-
 
 try:
     sys.argv[1]
