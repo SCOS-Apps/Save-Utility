@@ -5,15 +5,6 @@ global config
 
 config = configparser.ConfigParser()
 
-try:
-    sys.argv[2]
-except IndexError:
-    print("File has not been set. Proceed with caution.")
-else:
-    config.read(sys.argv[2])
-    print("MEM Set")
-
-
 def read(direct, variable):
     print(config[direct][variable])
 
