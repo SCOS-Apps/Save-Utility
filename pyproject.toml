@@ -1,6 +1,6 @@
 [project]
 name="ssave"
-version="v1.1"
+version="v0.1"
 dependencies = [
     "configpaser",
     "sys"
