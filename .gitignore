@@ -1,12 +1,7 @@
 dist/*
 ssave.egg-info/*
-dist/ssave-1.0-py3-none-any.whl
-dist/ssave-1.0.tar.gz
-ssave.egg-info/dependency_links.txt
-ssave.egg-info/PKG-INFO
-ssave.egg-info/requires.txt
-ssave.egg-info/SOURCES.txt
-ssave.egg-info/top_level.txt
+dist/*
+ssave.egg-info/*
 .vscode/*
 .idea/*
 __pycache__/*
