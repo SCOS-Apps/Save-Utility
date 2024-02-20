@@ -1,10 +1,6 @@
 [project]
 name="ssave"
 version="v0.1"
-dependencies = [
-    "configpaser",
-    "sys"
-]
 requires-python = ">= 3.8"
 keywords = ["save", "scos", "ssave"]
 readme = "README.md"
