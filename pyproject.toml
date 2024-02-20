@@ -1,6 +1,6 @@
 [project]
 name="ssave"
-version="v0.1"
+version="v1.0.0"
 requires-python = ">= 3.8"
 keywords = ["save", "scos", "ssave"]
 readme = "README.md"
