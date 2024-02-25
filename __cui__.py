@@ -24,7 +24,7 @@ while (True):
                 print("Warning: Variables Are None.")
                 N1 = input("Define Class: ")
                 N2 = input("Define Class Variable: ")
-        print(read(N1, N2))
+        print(ssave.read(N1, N2))
     elif (selection == "2"):
         N1 = input("Define Class: ")
         N2 = input("Define Class Variable: ")
@@ -35,9 +35,9 @@ while (True):
                 N1 = input("Define Class: ")
                 N2 = input("Define Class Variable: ")
                 N3 = input("Define Change: ")
-        write(N1, N2, N3)
+        ssave.write(N1, N2, N3)
     elif (selection == "3"):
-        sopen(input("File path: "))
+        ssave.sopen(input("File path: "))
     elif (selection == "4"):
         exit()
     elif (selection == "5"):
