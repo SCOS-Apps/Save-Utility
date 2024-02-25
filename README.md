@@ -1,6 +1,6 @@
 # SCOS Save Utility for Python 3
 
-[![Upload To PyPi (Fails often.)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/python-publish.yml/badge.svg)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/python-publish.yml) [![Deploy GitHub pages](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/jekyll-gh-pages.yml)
+[![Upload To PyPi (Fails often.)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/python-publish.yml/badge.svg)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/python-publish.yml) [![GitHub pages.](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/SCOS-Apps/Save-Utility/actions/workflows/jekyll-gh-pages.yml)
 
 ## What is this?
 
