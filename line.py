@@ -27,8 +27,6 @@ def sopen(file):
 try:
     sys.argv[1]
 except IndexError:
-    file = open(input("File to execute: ")).read()
-    exec(file)
+    print("No file in sys.argv[1].")
 else:
-    file = open(sys.argv[1]).read()
-    exec(file)
+    sopen(sys.argv[1])
