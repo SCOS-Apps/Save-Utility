@@ -1,13 +1,10 @@
 from setuptools import setup
 
-def readme():
-    with open('README.rst') as f:
-        return f.read()
-
 setup(name='ssave',
       version='v1.0.3',
       description="SCOS Save Utility",
-      long_description=readme(),
+      long_description=open('README.md').read(),
+      long_description_content_type='text/markdown',
       url='https://github.com/SCOS-Apps/Save-Utility',
       readme="README.md",
       keywords = ["save", "scos", "ssave"],
