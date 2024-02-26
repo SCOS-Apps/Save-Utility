@@ -8,8 +8,13 @@ config.read("data.ini")
 print(config.read("Info", "Version"))
 
 try:
-    sys.argv[1]
-except IndexError:
-    print("No file in sys.argv[1].")
+    print(sys.argv[1])
+except:
+    print("File not found or not specified.")
 else:
-    easy.sopen(sys.argv[1])
+    try:
+        config.read(sys.argv[1])
+    except:
+        print("File does not exist or something else happened.")
+    else:
+        config.read(sys.argv[1])
