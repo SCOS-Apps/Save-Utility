@@ -41,6 +41,7 @@ while (True):
     elif (selection == "3"):
         ssave.sopen(input("File path: "))
     elif (selection == "4"):
+        config.write()
         exit()
     elif (selection == "5"):
         print("SCOS Config & Save Editor and __main__er.")
