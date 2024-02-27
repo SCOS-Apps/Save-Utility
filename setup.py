@@ -5,7 +5,7 @@ def read_file(file):
         return f.read()
     
 long_description = read_file("README.md")
-version = 'v1.0.4'
+version = 'v1.0.5'
 
 setup(
     name = 'ssave',
