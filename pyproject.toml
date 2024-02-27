@@ -2,10 +2,10 @@
 requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 [project]
-name = 'ssave'
-version = 'v1.0.3'
+name = "ssave"
+version = "v1.0.3"
 description = "SCOS Save Utility For Python3"
 readme = "README.md"
 keywords = ["save", "scos", "ssave"]
 [project.urls]
-Homepage = 'https://github.com/SCOS-Apps/Save-Utility'
+Homepage = "https://github.com/SCOS-Apps/Save-Utility"
