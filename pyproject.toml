@@ -5,8 +5,6 @@ build-backend = "setuptools.build_meta"
 name = 'ssave'
 version = 'v1.0.3'
 description = "SCOS Save Utility For Python3"
-readme = "README.md"
-readme.content-type = "text/markdown"
 keywords = ["save", "scos", "ssave"]
 [project.urls]
 Homepage = 'https://github.com/SCOS-Apps/Save-Utility'
