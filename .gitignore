@@ -6,3 +6,5 @@ ssave.egg-info/*
 .idea/*
 __pycache__/*
 .github/*
+ssave/__pycache__/*
+.gitignore
