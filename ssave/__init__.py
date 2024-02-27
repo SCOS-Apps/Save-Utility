@@ -21,6 +21,12 @@ def sopen(file):
         except:
             print("File does not exist or something else happened.")
 
+def create(filePath):
+    try:
+        open(filePath, "x")
+    except:
+        print("File exist or something else happend.")
+
 try:
     print(sys.argv[1])
 except:

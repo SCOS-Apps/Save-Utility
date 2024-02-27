@@ -10,12 +10,14 @@ print("SCOS Config & Save Editor and __main__er.")
 
 print("NOTE: Do NOT close the program while in write function.")
 
-print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
+print("Functions:\nC. Create file.\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
 
 selection = None
 
 while (True):
     selection = input("Selection: ")
+    if (selection == "c" or "C"):
+        ssave.create(input("File path (Include file name): "))
     if (selection == "1"):
         N1 = input("Define Class: ")
         N2 = input("Define Class Variable: ")
