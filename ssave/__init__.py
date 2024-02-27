@@ -12,7 +12,7 @@ def write(direct, variable, change):
 
 def sopen(file):
     try:
-        print(file)
+        print(open(file).read())
     except:
         print("File not found or not specified.")
     else:
@@ -20,8 +20,6 @@ def sopen(file):
             config.read(file)
         except:
             print("File does not exist or something else happened.")
-        else:
-            config.read(file)
 
 try:
     print(sys.argv[1])
