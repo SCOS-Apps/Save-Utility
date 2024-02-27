@@ -12,7 +12,7 @@ def write(direct, variable, change):
 
 def sopen(file):
     try:
-        print(open(file).read())
+        open(file).read()
     except:
         print("File not found or not specified.")
     else:
