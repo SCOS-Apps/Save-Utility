@@ -30,7 +30,7 @@ def create(filePath):
         print("File exist or something else happend.")
 
 try:
-    print(sys.argv[1])
+    len(sys.argv[1])
 except:
     print("File not found or not specified.")
 else:
