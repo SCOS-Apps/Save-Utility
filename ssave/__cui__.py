@@ -16,7 +16,7 @@ selection = None
 
 while (True):
     selection = input("Selection: ")
-    if (selection == "c" or "C"):
+    if (selection == "c") or ( selection == "C"):
         ssave.create(input("File path (Include file name): "))
     if (selection == "1"):
         N1 = input("Define Class: ")
