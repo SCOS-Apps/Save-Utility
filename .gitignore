@@ -2,9 +2,9 @@ dist/*
 ssave.egg-info/*
 dist/*
 ssave.egg-info/*
-.vscode/*
 .idea/*
 __pycache__/*
 .github/*
 ssave/__pycache__/*
 .gitignore
+.vscode/settings.json
