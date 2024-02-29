@@ -6,7 +6,7 @@ global N1
 global N2
 global N3
 
-print("SCOS Config & Save Editor and __main__er.")
+print("SCOS Config & Save Editor")
 
 print("NOTE: Do NOT close the program while in write function.")
 
@@ -41,11 +41,12 @@ while (True):
     elif (selection == "3"):
         ssave.sopen(input("File path: "))
     elif (selection == "4"):
-        config.write()
+        with open(filepath, 'w') as configfile:
+            config.write(configfile)
         exit()
     elif (selection == "5"):
         print("SCOS Config & Save Editor and __main__er.")
 
         print("NOTE: Do NOT close the program while in write function.")
         
-        print("Functions:\n1. __main__\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
+        print("Functions:\n1. Read\n2. Write\n3. Open File (Will cause error if not done)\n4. Exit\n5. Help")
